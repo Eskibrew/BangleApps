@@ -1,0 +1,18 @@
+{
+  "id": "bowserWFD",
+  "name": "Bowser Watchface Date",
+  "shortName": "Bowser Watchface Date",
+  "version": "0.01",
+  "description": "Let bowser show you the time",
+  "icon": "app.png",
+  "type": "clock",
+  "tags": "clock",
+  "supports": ["BANGLEJS2"],
+  "allow_emulator": true,
+  "readme": "README.md",
+  "storage": [
+    { "name": "bowserWF.app.js", "url": "app.js" },
+    { "name": "bowserWF.img", "url": "app-icon.js", "evaluate": true }
+  ],
+  "data": [{ "name": "bowserWFD.json" }]
+}
