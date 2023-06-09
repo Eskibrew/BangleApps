@@ -210,6 +210,14 @@ const clock = new ClockFace({
 			boxTL_y + digitPositions[3].y
 		);
 		g.drawImage(sprite, sprite_TL_x, sprite_TL_y);
+
+        // Show date and day of week
+        var date_x = g.getWidth() / 2;
+        var date_y = g.getHeight() / 2;
+        var date = new Date();        
+        var dateStr = require("locale").date(date, 0).toUpperCase();
+        g.setFontAlign(0, 0).setFont("6x8", 2).drawString(dateStr, date_x, date_y + 40);
+
 		// Bangle.drawWidgets();
 
 		if (this.drawing) {
